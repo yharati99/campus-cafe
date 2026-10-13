@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Café | Quote Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="head panel">
+      <h1>Campus Café</h1>
+      <p class="muted">Quote Dashboard<br>JavaScript Fundamentals + 12-column CSS Grid</p>
+      
+      <!-- TODO (HTML #1): Add a wide banner image & attribution here. -->
+      <img id="header-img" src="pavel.jpg" alt="Coffee on a table" />
+      <p class="muted">Attribution: Photo by Pavel Abramiankou on
+        <a href="https://unsplash.com/photos/people-sit-at-tables-outside-a-parisian-restaurant-yzh7B-9sOhc" target="_blank">Unsplash</a>.
+      </p>
+    </header>
+
+    <nav class="nav panel">
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#quote">Get Quote</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="content panel">
+      <section id="menu">
+        <h2>Menu</h2>
+        <p class="muted">Display cards only. Inputs are collected using dialogs.</p>
+        <div class="menu-flex">
+          <article>
+            <h3>Coffee</h3>
+            <p>Freshly roasted organic drip coffee.</p>
+            <p class="price">$3.25</p>
+          </article>
+          <article>
+            <h3>Sandwich</h3>
+            <p>Freshly made sandwich with your choice of meat or vegetarian.</p>
+            <p class="price">$8.50</p>
+          </article>
+          <article>
+            <h3>Salad</h3>
+            <p>Fresh salad with your choice of dressing.</p>
+            <p class="price">$7.25</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quote" style="margin-top: 18px;">
+        <h2>Get a Quote</h2>
+        <p class="muted">Click Get Quote and enter values in dialogs.</p>
+        <div class="actions">
+          <button id="calcBtn" type="button">Get Quote</button>
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+      </section>
+
+      <section id="about" style="margin-top: 18px;">
+        <h2>About Us</h2>
+        <p class="muted">Welcome to Campuse Cafe! We are a cozy spot on campus where you can enjoy a delicious meal or a warm cup of coffee while studying.</p>
+      </section>
+    </main>
+
+    <aside class="sidebar panel">
+      <h3>Receipt</h3>
+      <pre id="receipt">No order data.</pre>
+    </aside>
+
+    <aside class="ads panel">
+      <h3>Local Weather</h3>
+      <div class="weather" id="weatherBox">Loading weather...</div>
+    </aside>
+
+    <footer class="footer panel">
+      <p>&copy; 2026 Campus Café</p>
+      <p class="muted">Weather data by Open-Meteo (CC BY 4.0).</p>
+    </footer>
+  </div>
+</body>
+</html>
